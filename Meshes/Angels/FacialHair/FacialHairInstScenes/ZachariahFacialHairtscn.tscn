@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=4 uid="uid://cwen2e8tjr5wk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lr2w8"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4wuw3"]
+_surfaces = [{
+"aabb": AABB(-1.65634, -1.43625, 5.30088, 0.364016, 0.275344, 0.68657),
+"format": 34896613377,
+"index_count": 87,
+"index_data": PackedByteArray("EQADABUAEwAAABIAEwABAAAAFAABABMAFAACAAEAFQACABQAFQADAAIAAwAFAAIAAwAGAAUAEQAGAAMAAgAEAAEAAgAFAAQABQAJAAQABQAKAAkABgAKAAUABgALAAoAEQALAAYABAAAAAEAAAAJAAgAAAAEAAkAEQAQAAsACAAMAAcACAANAAwACQANAAgACQAOAA0ACgAOAAkACgAPAA4ACwAPAAoACwAQAA8A"),
+"lods": [0.0656059, PackedByteArray("EQADABUAFQADABQAAwAGABQAEQAGAAMAFAAGAAAAFAAAABMAEwAAABIAAAAGAAgAEQALAAYABgALAAgAEQAQAAsACwAQAA8ACwAPAAgACAAPAA4ACAAOAA0ACAANAAwACAAMAAcA")],
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("3/Y6KUMsAAAFjVI1CTAAAC1QE11HTAAAYyQHcbVkAABfswAAdmwAAAFuMjcoewAAlzO4XZt8AACO6gQ4PrIAAP//cg4SoAAA8o9wKxmzAACaVR5V0KsAACcn+WxplQAA6VH/////AAAsSuzlJfsAACssWMBR4AAARRVPpb3BAABbBtuVlqAAAAAAk5IjfgAAwDZi8gAAAADJG1nIqxoAAJkNkLCiOgAAcgKYm7ZbAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yf2i6"]
+resource_name = "ZachariahFH_Plane_008"
+_surfaces = [{
+"aabb": AABB(-1.65634, -1.43625, 5.30088, 0.364016, 0.275344, 0.68657),
+"attribute_data": PackedByteArray("/5//v/+f/8//n//f/5//7/9//8//f//f/3//7/9f/6//X/+//1//z/9f/9//X//v/z//r/8//7//P//P/z//3/8//+//T////2////+P////r////7//v/+//8//v//f/7//7/9f/78="),
+"format": 34896613399,
+"index_count": 87,
+"index_data": PackedByteArray("FAADABgAFgAAABUAFgABAAAAFwABABYAFwACAAEAGAACABcAGAADAAIAAwAFAAIAAwAGAAUAEwAGAAMAAgAEAAEAAgAFAAQABQAJAAQABQAKAAkABgAKAAUABgALAAoAEgALAAYABAAAAAEAAAAJAAgAAAAEAAkAEQAQAAsACAAMAAcACAANAAwACQANAAgACQAOAA0ACgAOAAkACgAPAA4ACwAPAAoACwAQAA8A"),
+"lods": [0.0656059, PackedByteArray("FAADABgAGAADABcAAwAGABcAEwAGAAMAFwAGAAAAFwAAABYAFgAAABUAAAAGABkAEgALAAYABgALABkAEQAQAAsACwAQAA8ACwAPABkAGQAPAA4AGQAOAA0AGQANAAwAGQAMAAcA")],
+"material": SubResource("StandardMaterial3D_lr2w8"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("3/Y6KUMs0uYFjVI1CTDw9y1QE11HTG38YyQHcbVkKvxfswAAdmxG2wFuMjcoe1vilzO4XZt8ReSO6gQ4PrLxrP//cg4SoNPL8o9wKxmz/sOaVR5V0KvGyScn+WxplZzO6VH/////7KssSuzlJfvjrSssWMBR4Fu1RRVPpb3B775bBtuVlqACxQAAk5IjfvnLAACTkiN+390AAJOSI3478wAAk5Ijfkj2wDZi8gAAgP7JG1nIqxoV/ZkNkLCiOsb3cgKYm7Zb9Pf//3IOEqDvym5cbUtYXn5JGFxRUjhczVN1T7VcmE68YupOtWI2WnpgrlOBWVZKk2ohP8t2TTyRdwlZkmDLVVRkQ0fKcuU4GYQdN5SH5TKxiX1DaG9YVe5ejtDr5FJi7DmCwIXigMnb4jLMluJNUn1d")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4wuw3")
+
+[node name="ZachariahGoatee" type="MeshInstance3D"]
+transform = Transform3D(0.531221, -1.56033, 0.0316785, 1.56065, 0.531116, -0.0105677, -0.000203761, 0.0333941, 1.64824, 0.120214, 10.815, -9.36383)
+mesh = SubResource("ArrayMesh_yf2i6")
+skeleton = NodePath("")

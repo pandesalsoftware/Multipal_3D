@@ -1,0 +1,178 @@
+Position Vector 3 of all Hairstyles 
+
+1. Mars
+	POSITION ( x = ? , y = ? , z = ? ) 
+	ROTATION ( x = ? , y = ? , z = ? ) 
+
+2. Zach
+	POSITION ( x = ? , y = ? , z = ? ) 
+	ROTATION ( x = ? , y = ? , z = ? ) 
+
+3. Roger
+	POSITION ( x = ? , y = ? , z = ? ) 
+	ROTATION ( x = ? , y = ? , z = ? ) 
+
+
+4. York
+	POSITION ( x = 0.1 , y = 9.9 , z =  0 ) 
+	ROTATION ( x = 0   , y =  63 , z =  0 ) 
+
+^ Toggle positioning of each via a node3D! 
+
+
+func needs to 
+
+1.[FIXED] Instance the scene 
+	a. At a specific POSITION in Vector 3 
+	b. At a specific ROTATION in Vector 3
+
+2. Have the ability to be deleted after another Hairstyle is instantiated
+	a Queue_Free
+
+
+QUESTIONS : 
+
+	Should I reparent the node here in the creation scene--or have a final process to check for all selections and then save the customized model options as it's own avatar which would let it save it's child/parent node relations
+
+		EX : 
+			
+		Selected options : 	PeachSkin
+					YorkHair
+					YorkMouth
+					YorkWings 
+
+		
+
+		SkinSelected = PeachSkin     -> Save Selection
+		HairSelected = YorkHair      -> Parent node to NeckBone 
+		MouthSelected = YorkMouth    -> Parent node to NeckBone or HeadMesh? 
+		WingsSelected = YorkWings    -> Save Selection
+
+
+- save player options 
+- name angel 
+- data will be saved with selected presets, with hopefully, the possibility to change.
+
+
+
+
+
+
+Hair : 
+
+Options to Flip? Possibility to combine hairstyles, click same hair button again to delete hair. (In which case we should make hairstyles that could be combined)
+> On a side note, how will hair colors be handled?  
+[Same as skin, but with different options, color wheel could be heloful...but complicated.]
+
+
+
+
+
+
+Hair instancing Notes : 
+
+Maybe I can include a way to spawn in the instantiation node3D positions...only having them available within the context of the hair existing... hm...
+^ works perfect. recommended solution from godot forums. 
+
+Now I need to figure out how to delete them from the scene. Toggling visibility of QueueFree or QF button of each hair style based on it's instance in the scene. 
+
+UPDATE : Hairstyles can now be removed from the scene. You can have as many stacked on as you want. No way to double instantiate as the selection button is disabled after being pressed once. It cannot be pressed again until the hairstyle is deleted via it's respective QF or Queue Free Button
+
+Now we need to figure out how to change the hair colors. 
+
+
+
+
+	quality of life features : :
+
+Line 8 changes : 
+
+skintonesPALE: Array = [Vanilla.tres, Pale.tres, Peach.tres]
+skintonesMED: Array = [Caramel.tres, 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Eyes Setup Template = 
+
+??? = Replace with Asset Name 
+
+lets try to call all eyesets as EYES plural. 
+
+
+func marsEyes_inst():
+	var marsEyesScene = preload("res://Meshes/Angels/Eyes/MarsEyes.glb")
+	var marsEisnt = marsEyesScene.instantiate()
+	var marsEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/MarsEPos"
+	marsEpos.add_child(marsEisnt)
+	#Checking for Instance 
+	#if is_instance_valid(marsEinst):
+	pass
+	#Toggeles QF button to Visible 
+	#marsEyeQF.visible = true 
+	#Disables the Eye Inst Button 
+	#marsEyesBTN.disabled = true 
+
+#AWAITING BUTTON PRESS...
+#[Insert Button function here] 
+
+#QUEUE FREE FUNCTION 
+#func _on_mars_eyes_qf_pressed():
+	#var marsEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/MarsEPos"
+	var childNode = marsEpos.get_child(0)
+	if childNode: 
+		childNode.queue_free()
+		#Toggles Visibility of QF button to false (default)
+		#MarsEyesQF.visible = false 
+		#Re-Enables the Eye inst Button 
+		#MarseyesBTN.disabled - false 
+
+==-=-=-=======-=-=-=-===-=====-=-=
+
+
+
+if hair_options_btn is visible = true 		     and 		if eyespanel.visible = true 
+
+	> $eyespanel.visible = false 						> $hairstylespanel.visible = false 
+
+
+=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+childNode.material.albedo_color = Color8(255, 0, 0)
+
+or we can change it with the buttons. preload the textures into the squares in the quadron.  blah blah 
+
+
+if childnode (hair inst) is present can change
+
+if can change = true 
+
+	-> then : hair color picker active 
+
+
+
+if instance is valid : roger, York, Zach, mars, etc : 
+
+change.color = based on button press palette
+
+
+-=-=-=-=-=-=-=-
+
+
+if instance is valid : York
+
+YOrkpos.child.surfacematerialoverride
+
+childNode.material.albedo_color
+
+-=-==-
+
+android SDK Path : C:\Users\bakla\AppData\Local\Android\Sdk
+
+debug keystore : C:/Program Files/Java/jdk-21/bin/debug.keystore
+
+Debug keystore user : androiddebugkey
+
+Debug Keystore pass : android

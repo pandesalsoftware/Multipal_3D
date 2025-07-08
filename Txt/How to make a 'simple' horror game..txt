@@ -1,0 +1,47 @@
+How to make a 'simple' horror game...???
+
+1. Give the player a simple enough task, like something that sounds SOOO EASY, that they could do it in their sleep.
+	Ex : 
+		- Slenderman/Faith : Collect Notes
+		- Lethal Company : Fix shit...
+
+2. Add the 'Obstacle', 
+	- What is stopping the player from doing their task? 
+		- Is someone/something chasing them?
+			- Randomization or very smart 'monster' AI can make the game scarier. 
+				- Scripted events can be jarring at all times, but certainly have their purpose for huge story developments or the beginning of a boss fight. (Doubt we will make it to have something that well rounded within a jam period.) 
+		- Is there a time limit? 
+		- Are there locked doors?...Is something making it harder to find the keys?
+
+3. Not everything needs to make sense in the beginning...or the end.
+		- Allow for plot holes that confuse the player, works best in some games better than others, but horror can be very forgiving, because the unknown or the confusing is pretty fucking scary. 
+
+
+
+
+
+Faith Notes : 
+
+Playing for the first time : 
+
+- The aesthetic of the game made me not end up playing on the first night I opened it. I was horrified as it brought me back to being a kid and growing up with DOS games, and sneaking on the old PC to play things like Doom. - Mars
+- The music never really settles, and the way it all cuts when you pause freaks me out. - Chris 
+- It sets of our fight or flight really well when the 'monster' comes out of nowhere. - York 
+- I like how it is random gameplay everytime. Buuut on that note, I felt frustrated when I kept dying but for some reason it makes me want to keep going back, if that makes sense. - Zach 
+- I love how the simple collision effects can 'trip' you up, like getting stuck on a small rock or a tree while you try to escape. - Johnny
+- Everything is so simple but effective. Don't need a three million poly count to scare people, that's for sure. - Harry 
+- Adding onto Harry, it must be a whole different ballgame, scaring people in 3D vs 2D. - Roger 
+
+
+Revisiting...And making it to the House... : 
+
+- Once we realized we could use the cross to protect ourselves the game got a lot easier. The cross gave us the means to have control over the horror. I love how it used the cross to combat the demon outside to grab the key and also how we can have an entire boss fight against Amy's possessed body inside the house. - Mars 
+- Scared shitless. - Chris
+- Thomas screamed like a girl.. - York 
+- The tension is fucking insane!!! - Zach
+- I want to capture the energy of the chases in this game with our game. - Mars
+- I'd like to pull inspiration from DBD for the chases. Maybe we have to go off the trial of what we were gonna do... - Donny 
+- Using reversed sounds can make music beyond unsettling. Balancing quiet with sudden noises that are alien or high pitch can make the hair on the back of your neck stand up straight. - Chris 
+
+
+THERES MULTIPLE ENDINGS AND CHOICES!!! WTH!!!! - zACH

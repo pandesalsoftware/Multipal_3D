@@ -1,0 +1,62 @@
+CosmInst Queue Free System : 
+
+Create Multiple hair tabs and multiple POS nodes for hairstyles to become children of. 
+
+Only make it so that one hair or cosminst can be under it's respective parent POS node at a time. 
+
+
+Script One, Rough Idea, based on how Color Picker checks for children of HairPos1 : 
+
+
+@onready var HairPos1 = $Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1
+if HairPos1.get_child_count() > 1: 
+	print("HairPos1 has child")
+	var HairPosChild1 = HairPos1.get_child(0) 
+	HairPosChild1.queue_free()
+		
+
+Script Two as advised by Copilot, not a separate function, one that simply tacks itself onto the pre existing hair instancing functions, looking for children and deleting them before adding a new child : 
+
+func donnyhair_inst():
+	var DonnyHairScene = preload("res://Meshes/Angels/Hair/HairInstScenes/DonnyHair.tscn")
+	var DHinst = DonnyHairScene.instantiate()
+	var DonnyHPos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+	
+	# Remove existing children
+	for child in DonnyHPos.get_children():
+		child.queue_free()
+	
+	DonnyHPos.add_child(DHinst)
+	
+	# Checking for Instance
+	if is_instance_valid(DHinst):
+		# Toggles QF button to Visible
+		$TabContainer/Hair/HairOptions/DonnyHairPVW/DonnyHairQF.visible = true
+		# Disables the Hair Inst Button
+		$TabContainer/Hair/HairOptions/DonnyHairPVW/DonnyHairBTN.disabled = true
+		# Toggles Inst Button to Not Visible 
+		$TabContainer/Hair/HairOptions/DonnyHairPVW/DonnyHairBTN.visible = false
+
+^ WORKS LIKE A CHARM --- NEED TO UPDATE EYES AND MOUTHS TO BE THE SAME...
+- Hair updated
+- Eyes updated 
+- Mouths updated
+
+Process : 
+
+- Delete QF Button Section
+- Copy this and Add underneath var NameHPos line and above NameHPos.add_child(NHinst) line : 
+
+		#Remove Existing Children 
+	for child in MandaHPos.get_children():
+		child.queue_free()
+	#Add Child 
+
+*Note H is for hair
+      E is for eyes
+      M is for mouths 
+
+- Delete lines underneath If is_instance_valid(NHinst): and replace function lines with pass, make sure to indent before the pass or else the engine becomes very angry with you and will explode. 
+
+
+* Note : Potentially make POS nodes moveable via animation track and make the save data system save the position of the node as well as the children of the node 

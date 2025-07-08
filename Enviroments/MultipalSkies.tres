@@ -1,0 +1,22 @@
+[gd_resource type="Environment" load_steps=2 format=3 uid="uid://d3smkaiqkm37e"]
+
+[ext_resource type="Sky" uid="uid://bi86mkae6vsmt" path="res://Enviroments/panorama_sky.tres" id="1_7b35q"]
+
+[resource]
+background_mode = 2
+sky = ExtResource("1_7b35q")
+sky_custom_fov = 74.7
+glow_normalized = true
+glow_intensity = 8.0
+glow_strength = 1.25
+fog_light_color = Color(0.85098, 0.866667, 0.890196, 1)
+fog_light_energy = 0.0
+fog_sun_scatter = 23.2
+fog_density = 0.0
+fog_aerial_perspective = 1.0
+fog_sky_affect = 0.0
+fog_height = -13.8
+fog_height_density = 16.0
+adjustment_brightness = 0.01
+adjustment_contrast = 0.77
+adjustment_saturation = 2.88

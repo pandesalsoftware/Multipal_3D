@@ -1,0 +1,58 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://b52xvdt5ktrj"]
+
+[ext_resource type="FontFile" uid="uid://dsh0dpa6p820o" path="res://Fonts/switzal/Switzal.ttf" id="1_jxixe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jxixe"]
+bg_color = Color(0.654469, 0.593977, 0, 1)
+border_width_left = 22
+border_width_top = 10
+border_width_right = 4
+border_width_bottom = 4
+border_blend = true
+corner_radius_top_left = 1000
+corner_radius_top_right = 1000
+corner_radius_bottom_right = 1000
+corner_radius_bottom_left = 1000
+corner_detail = 20
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 7
+shadow_offset = Vector2(-1.065, 3.02)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kx5cl"]
+bg_color = Color(0.43134, 0.43134, 0.43134, 1)
+border_width_left = 22
+border_width_top = 10
+border_width_right = 4
+border_width_bottom = 4
+border_blend = true
+corner_radius_top_left = 1000
+corner_radius_top_right = 1000
+corner_radius_bottom_right = 1000
+corner_radius_bottom_left = 1000
+corner_detail = 20
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 7
+shadow_offset = Vector2(-1.065, 3.02)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6xab"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 22
+border_width_top = 10
+border_width_right = 4
+border_width_bottom = 4
+border_blend = true
+corner_radius_top_left = 1000
+corner_radius_top_right = 1000
+corner_radius_bottom_right = 1000
+corner_radius_bottom_left = 1000
+corner_detail = 20
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 7
+shadow_offset = Vector2(-1.065, 3.02)
+
+[resource]
+default_font = ExtResource("1_jxixe")
+Button/fonts/font = ExtResource("1_jxixe")
+Button/styles/hover = SubResource("StyleBoxFlat_jxixe")
+Button/styles/normal = SubResource("StyleBoxFlat_kx5cl")
+Button/styles/pressed = SubResource("StyleBoxFlat_j6xab")

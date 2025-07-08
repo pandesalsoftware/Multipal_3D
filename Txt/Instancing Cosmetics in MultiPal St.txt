@@ -1,0 +1,46 @@
+				Multipal Cosmetic Instance Documentation :
+			Instancing Cosmetics in MultiPal Step by Step Process
+-------------------------------------------------------------------------------------------------------
+
+1. Open NewPalAC1.tscn 
+
+(You can either focus on the 2D viewport or Script first, doesn't matter.) 
+
+2D viewport : 
+
+1. Underneath (Control Node) named "AC_UI" find the (Tab Container) named "TabContainer" , then find 
+the type of object you would like to instance. 
+Tabs : 
+
+	- Hair, Eyes, Mouth (needs to be added)
+
+		 	*Using the Hair tab as an example from here on.
+
+2. You will need the .glb of your item, in this example : "StatiaHair.glb" 
+
+			*The file should lead to a .glb not a .tscn 
+		(Just in case! You might not run into this issue anymore.) 
+
+--- IF YOU HAVE A GLB FILE IGNORE THIS SECTION AND MOVE ONTO STEP 3 --------------------------
+
+1. Export the .glb into Documents/Game-Dev/Editable/MultiPal3D/Meshes/Angels/Hair/GLB
+		*Your file path will be different up until about the sixth folder
+
+2. You don't HAVE to do this step, but it's precautionary to backup the .glb file export into this folder : C:\Users\bakla\Documents\3D Models\MultiPal\Avatars\Pieces
+		
+	*From there you will need to find the folder with your Instance type and paste it in there. 
+
+3. Export Instructions for Blender : 
+
+	3a. Select the Object you wish to export in Object Mode
+	3b. Navigate to File, click export, under the drop down menu select "Export as Gltf 2.0" 
+	3c. Export it into the correct folder, rename with the Name of your Alter and then the type of asset you've created. 
+
+Statia Hair example : StatiaHair.glb
+
+
+----------------------------------------------------------------------------- EXPORT INST. END ---
+
+IMPORT INST. BEGIN ----------------------------------------------------------------------------------
+
+

@@ -1,0 +1,12 @@
+THE BENDS NOTEPAD
+------------------
+This animation belongs to an imported scene, so changes to imported tracks will not be saved.
+
+To modify this animation, navigate to the scene's Advanced Import settings and select the animation.
+Some options, including looping, are available here. To add custom tracks, enable "Save To File" and
+"Keep Custom Tracks".
+
+OG Window Settings : 
+
+Viewport Width : 1152
+Viewport Height : 648

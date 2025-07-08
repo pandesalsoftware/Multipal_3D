@@ -1,0 +1,33 @@
+[SKIP PAST OUR SAPPINESS UNDERNEATH THE DASHES TO THE ACTUAL READ ME.... - Chris]
+
+York : Hello and thank you for downloading the Pandesoft MegaMix 2023! Happy New year!
+
+Mars : We're excited to bring you even more games in 2024! 
+
+Zach : Thank you so much to everyone who has been supporting us. 
+
+Donny : It's been a wild ride, who knows where it'll take us next.
+
+₊˚⊹♡---------------------------------[READ BELOW FOR IMPORTANT DETAILS ABOUT EDITING THESE GAMES]------------------------------------₊˚⊹♡
+
+Mars : If you're looking to edit these games, you've found the right place! All the assets, scripts and music is within the folders of their respective games in the "Editable" folder. 
+
+York : If you don't already have Godot 3.2.3, please import the Godot.import files within that version, otherwise the game could become corrupted! (Lots of things have been taken out of the engine since then, and we sort of found that out the hard way. LOL. If you're having any trouble please don't hesitate to drop an email to us over at baklababe99@gmail.com (We don't bite. Promise.)
+
+Roger : For your convenience we decided to be nice and include that very version right here in the "Editable" folder. <3
+
+
+
+ ⠀⠀⠀⠀⠀⠀⠀⢰⣿⠛⠷⡞⠛⢳⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡟⠛⣷⠾⣻⢷⡆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠘⣷⠑⡆⢳⡆⠀⣿⠀⠀⠀⠀⠀⢭⢓⠿⠇⠀⠀⠀⠀⠀⣿⠀⢰⡟⠐⢃⡞⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⢅⡹⡈⠿⡀⢹⡇⠀⠀⠀⠀⠈⠛⠃⠀⠀⠀⠀⠀⢹⠉⣀⠏⡽⢁⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠐⡜⠣⠬⠙⠦⢄⠀⠀⠀⠀⠀⠀⠀⢀⣠⠼⠛⠶⡟⠐⠃⣞⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣠⣤⠛⠛⠛⠛⣤⣍⡏⠁⠀⠀⣀⣀⠈⢻⡄⠀⠀⠀⠀⢠⠟⠁⣀⣄⠀⠀⠈⣿⣩⣤⠛⠛⠛⠻⣤⣀⠀⠀⠀
+⠀⣠⡔⠉⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠙⠛⠀⢨⣿⠀⠀⠀⠀⣞⡇⠀⠛⠃⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⠀⠹⢧⣀⠀
+⢠⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⡟⠀⠀⠀⠀⢣⣤⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠉⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⡏⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
+⠸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⣤⣤⣤⠀⠀⠀⣀⠀⣼⠇                  HAVE A HAPPY NEW YEAR! HAPPY EDITING!
+⠀⠻⢆⣴⣤⣤⣤⣯⣭⣵⣦⣤⣤⣼⣄⡸⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢿⣾⣧⣤⣴⣾⣿⣿⣿⣤⣤⣼⣤⡼⠛⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠀⡀
+

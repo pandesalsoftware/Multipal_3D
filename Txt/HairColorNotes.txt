@@ -1,0 +1,161 @@
+1st version : 
+	Problems. 
+	1. Out of bounds errors when moving the colorpicker with not instances. 
+	2. When hair is instanced and color attempts to change there is an error that says : 
+"Invalid set index 'material_override' (on base: 'MeshInstance3D') with value of type 'Callable'."
+
+@onready var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+#Creates a new Material to override(?)
+var mat3D = StandardMaterial3D.new
+
+
+func _on_color_picker_color_changed(color):
+	#Checking for MeshInstance3D underneath HairPos1 to override it's Material's Albedo color
+	var hairPosChild = HairPos1.get_child(0)
+	if hairPosChild is MeshInstance3D:
+		hairPosChild.material_override = mat3D
+		hairPosChild.material_override.albedo_color = color
+		print("Hair Color Changed!")
+	else : 
+		#If there are no MeshInstance3D children underneath the HairPos1 Node: 
+		print("Nothing to change!")
+
+
+2nd Version : 
+	Good things. 
+	1. Game doesn't crash when testing color options, whether there is an instance or not. 
+	2. The game is recognizing when there isn't an instance, prints "Nothing to change!" like it should in the else section of the script. 
+	3. No Out of Bounds Errors. 
+	Problems.
+	1. The game can't recognize any children underneath the HairPos1 node, even when something is instanced, I keep seeing "Nothing to change!" being printed in the console. 
+
+
+
+@onready var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+var mat3D = StandardMaterial3D
+
+func _on_color_picker_color_changed(color):
+	#Check if HairPos1 has any children to avoid out-of-bounds errors
+	if HairPos1.get_child_count() > 0:
+		var HairPosChild = HairPos1.get_child(0)
+		if HairPos1 is MeshInstance3D:
+			#Ensure mat3D is a new instance of StandardMaterial3D 
+			mat3D.albedo_color = color
+			HairPosChild.material_override = mat3D
+			print("Hair color changed!")
+		else : 
+			print("Nothing to change!")
+
+
+
+
+
+3rd Version : 
+	Problems.
+	No errors. But it's also not doing anything at all now. Nothing is printed in the console. 
+
+@onready var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+var mat3D = StandardMaterial3D.new()
+
+func _on_color_picker_color_changed(color):
+	#Check if HairPos1 has any children to avoid out-of-bounds errors
+	if HairPos1.get_child_count() > 0:
+		var HairPosChild = HairPos1.get_child(0)
+		if HairPos1 is MeshInstance3D:
+			#Ensure mat3D is a new instance of StandardMaterial3D 
+			mat3D.albedo_color = color
+			HairPosChild.material_override = mat3D
+			print("Hair color changed!")
+		else : 
+			print("Nothing to change!")
+
+
+
+Fourth Version : 
+
+		Problems.
+		All print signals fire except for "MeshInstance3D Detected." even though in my remote debugger window I can see the child nodes that I instance, and they are indeed meshinstance3D...For some reason it is not seeing them in the script, so that's why it's not changing anything. I also added a load in the line "mat3D.albedo_color = load(color) but it doesn't seem to be doing anything. Should I remove or keep it?
+
+@onready var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+var mat3D = StandardMaterial3D.new()
+
+func _on_color_picker_color_changed(color):
+	print("Color Picker changed!")
+	#Check if HairPos1 has any children to avoid out-of-bounds errors
+	if HairPos1.get_child_count() > 0:
+		print("Hair instance ready to change!")
+		var HairPosChild = HairPos1.get_child(0)
+		if HairPos1 is MeshInstance3D:
+			print("MeshInstance3D Detected.")
+			#Ensure mat3D is a new instance of StandardMaterial3D 
+			mat3D.albedo_color = load(color)
+			HairPosChild.material_override = mat3D
+			print("Hair color changed!")
+		else : 
+			print("Nothing to change!")
+
+
+
+Fifth Version : Perfect. 
+
+@onready var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+var mat3D = StandardMaterial3D.new()
+
+func _on_color_picker_color_changed(color):
+	print("Color Picker changed!")
+	#Check if HairPos1 has any children to avoid out-of-bounds errors
+	if HairPos1.get_child_count() > 0:
+		print("Hair instance ready to change!")
+		var HairPosChild = HairPos1.get_child(0)
+		if HairPosChild is MeshInstance3D:
+			print("MeshInstance3D Detected.")
+			#Ensure mat3D is a new instance of StandardMaterial3D 
+			mat3D.albedo_color = (color)
+			HairPosChild.material_override = mat3D
+			print("Hair color changed!")
+		else : 
+			print("Nothing to change!")
+
+
+
+
+Potential Script to save Hair color data via RGB color number: Unsure if this will be in AC_UI or...what...but we shall see. 
+
+extends Control
+
+@onready var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+var mat3D = StandardMaterial3D.new()
+
+func _on_color_picker_color_changed(color):
+    print("Color Picker changed!")
+    if HairPos1.get_child_count() > 0:
+        print("Hair instance ready to change!")
+        var HairPosChild = HairPos1.get_child(0)
+        if HairPosChild is MeshInstance3D:
+            print("MeshInstance3D Detected.")
+            mat3D.albedo_color = color
+            HairPosChild.material_override = mat3D
+            print("Hair color changed!")
+        else:
+            print("Child is not a MeshInstance3D!")
+    else:
+        print("No children found under HairPos1!")
+
+func save_hair_color():
+    var color = mat3D.albedo_color
+    var hair_color_data = {
+        "red": color.r,
+        "green": color.g,
+        "blue": color.b
+    }
+    # Save hair_color_data to a file or database
+    print("Hair color saved:", hair_color_data)
+
+func load_hair_color(hair_color_data):
+    var saved_color = Color(hair_color_data["red"], hair_color_data["green"], hair_color_data["blue"])
+    mat3D.albedo_color = saved_color
+    if HairPos1.get_child_count() > 0:
+        var HairPosChild = HairPos1.get_child(0)
+        if HairPosChild is MeshInstance3D:
+            HairPosChild.material_override = mat3D
+            print("Hair color loaded and applied!")

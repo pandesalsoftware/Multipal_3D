@@ -1,0 +1,68 @@
+Art Direction Notes : Multipal 
+
+
+Skin Tones, more of the programmers job...but, 
+- Mars : I am thinking of re-doing the Skin tone button to make a color wheel visible (separate from the hair color wheel) to change skin tones to any color the player wants
+- Mars : Need to add scroll wheel for more 
+
+Hair, need more long/feminine hairstyles, a couple more alter hairs too
+	David
+	Mia
+	Katie
+	Ashley
+	Emily
+	Pigtails 
+	Updos 
+	Medium/Shoulder length hair - Maybe based on Emily
+
+Eyes, 
+	David 
+	Mia 
+	Emily 
+	Katie
+	
+
+Eyebrows 
+
+	York
+	Zach
+	Mars
+	Roger
+	Manda
+	Donny
+	Statia
+	David 
+	Emily  
+	Katie
+	
+	
+
+Mouths, need more! 
+	Zach has no matching mouth
+	York has no matching mouth 
+	Roger has no matching mouth 
+	
+
+Facial Hair, need to add options and then wire them to be color changeable the same way the hair colors are wired 
+
+	Light Styles : 	
+	Mars stubble 
+	David light beard
+	York Mustache 
+
+	Thicker Styles : 
+	Chris Beard
+	Full, fluffy Beard
+	Goatee 
+	
+
+Accessories, 
+	Glasses
+	Hair Bows 
+	Hairbands 
+	Extra pigtails(?)  -> Could make Hair additions a separate tab
+	Extra ponytails(?) -> ^^^Ditto"""
+
+
+	
+

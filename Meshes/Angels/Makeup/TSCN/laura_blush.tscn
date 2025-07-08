@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=4 uid="uid://ntbnmx1w4l1e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fus2d"]
+resource_name = "Blush"
+cull_mode = 2
+albedo_color = Color(0.906482, 0.497157, 0.525848, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mw0i7"]
+_surfaces = [{
+"aabb": AABB(-0.556112, -0.383592, -3.07061, 0.98651, 1e-05, 5.93436),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAQADAAQAAAADAAEAAwAFAAYAAwAHAAUAAAAHAAMABQAHAAgACQAAAAoACwAAAAkABwAAAAsACwAJAAwABwALAA0ADQALAA4ABwANAA8AEAARABIAEQATABQAEAATABEAEwAVABYAEwAXABUAEAAXABMAFQAXABgAGQAQABoAGwAQABkAFwAQABsAGwAZABwAFwAbAB0AHQAbAB4AFwAdAB8A"),
+"name": "Blush",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("/38AAOXCAAB9JQAA2MsAAANPAAA5xQAAAAAAAHLhAAC+CQAAwdUAAH0lAAAM9wAAvgkAACPtAAD/fwAA//8AAANPAACr/QAAgdoAANjLAAD7sAAAOcUAAP//AABy4QAAQPYAAMHVAACB2gAADPcAAED2AAAj7QAA+7AAAKv9AAD/fwAAAAAAAH0lAADyCAAAA08AAFMCAAAAAAAAjB4AAL4JAADbEgAAfSUAACY0AAC+CQAAPSoAAP9/AAAZPQAAA08AAMU6AACB2gAA8ggAAPuwAABTAgAA//8AAIweAABA9gAA2xIAAIHaAAAmNAAAQPYAAD0qAAD7sAAAxToAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jccb0"]
+resource_name = "LauraBlush_Circle_012"
+_surfaces = [{
+"aabb": AABB(-0.556112, -0.383592, -3.07061, 0.98651, 1e-05, 5.93436),
+"attribute_data": PackedByteArray("AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8="),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAQADAAQAAAADAAEAAwAFAAYAAwAHAAUAAAAHAAMABQAHAAgACQAAAAoACwAAAAkABwAAAAsACwAJAAwABwALAA0ADQALAA4ABwANAA8AEAARABIAEQATABQAEAATABEAEwAVABYAEwAXABUAEAAXABMAFQAXABgAGQAQABoAGwAQABkAFwAQABsAGwAZABwAFwAbAB0AHQAbAB4AFwAdAB8A"),
+"material": SubResource("StandardMaterial3D_fus2d"),
+"name": "Blush",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("/38AAOXC/799JQAA2Mv/vwNPAAA5xf+/AAAAAHLh/7++CQAAwdX/v30lAAAM9/+/vgkAACPt/7//fwAA////vwNPAACr/f+/gdoAANjL/7/7sAAAOcX/v///AABy4f+/QPYAAMHV/7+B2gAADPf/v0D2AAAj7f+/+7AAAKv9/7//fwAAAAD/v30lAADyCP+/A08AAFMC/78AAAAAjB7/v74JAADbEv+/fSUAACY0/7++CQAAPSr/v/9/AAAZPf+/A08AAMU6/7+B2gAA8gj/v/uwAABTAv+///8AAIwe/79A9gAA2xL/v4HaAAAmNP+/QPYAAD0q/7/7sAAAxTr/v////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mw0i7")
+
+[node name="LauraBlush" type="MeshInstance3D"]
+transform = Transform3D(0.0533762, 0.497174, 0, -0.497174, 0.0533762, 0, 0, 0, 0.500031, 2.16793, 9.25631, -0.0507259)
+mesh = SubResource("ArrayMesh_jccb0")
+skeleton = NodePath("")

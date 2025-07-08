@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://y12r21gir7rl"]
+
+[ext_resource type="PackedScene" uid="uid://cg7hci0avj0ej" path="res://Meshes/Maps/AlterCreation.glb" id="1_abi7g"]
+
+[node name="AlterCreation" instance=ExtResource("1_abi7g")]
+
+[node name="Skin_OPTIONS" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.903916, 23.7205, -16.8181)
+
+[node name="Eyes_OPTIONS" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, -0.999645, -0.0266621, 0, 0.0266621, -0.999645, -0.345903, 26.8878, -18.1427)
+
+[node name="Wings_OPTIONS" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.245177, 22.5912, -18.7599)
+
+[node name="Halo_OPTIONS" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.604, 23.7862, -24.928)
+
+[node name="Cloud_HUD" parent="." index="5"]
+transform = Transform3D(3.1454, 0, 0, 0, 3.1454, 0, 0, 0, 3.1454, -4.46943, 23.2827, -15.384)

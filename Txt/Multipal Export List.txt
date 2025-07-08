@@ -1,0 +1,199 @@
+					Multipal Export List : 
+
+-------------------------------------------------------------------------------------------------------
+
+TEMPLATE : 
+
+
+[   ] 1.
+---------------------------					
+[   ] ???.glb 
+[   ] ???PVW.png
+[   ] Preview/Button Setup
+[   ] Added to SceneTree
+[   ] Added BTN script + Signals
+[   ] Test! 
+---------------------------------- 
+
+
+
+***Make a separate .tscn file of the scene by creating a new scene and dragging the .glb file into it and making the mesh the root of the scene so it can be color changed! 
+						NOTE :
+***** Make sure each export has default materials (Apart from eyes and Mouths) Anything that can change colors should have a plain white looking material!! *****
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+					[Hairstyle Exports List : 
+					-------------------------    
+					*Needs separate scene file 
+
+                     
+[   ] 1. DONE
+---------------------------
+	[ X ] IsabelleHair.glb
+	[ X ] IsabelleHair.tscn
+	[ X ] IsabelleHairPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+----------------------------------                            
+[   ] 2. DONE
+---------------------------
+	[ X ] NormanHair.glb
+	[ X ] NormanHair.tscn 
+	[ X ] NormanHairPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+----------------------------------   
+[   ] 1. DONE
+---------------------------
+	[ X ] AngeloHair.glb
+	[ X ] AngeloHair.tscn
+	[ X ] AngeloHairPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+----------------------------------
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+					Facial Hairs : 
+					--------------
+					*Needs separate scene file 
+                         
+[   ] 1. DONE
+---------------------------
+	[ X ] ZachariahGoatee.glb
+	[ X ] ZachariahGoatee.tscn
+	[ X ] ZachariahGoateePVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+---------------------------
+[   ] 1. DONE
+---------------------------
+	[ X ] ScottsFH.glb
+	[ X ] ScottsFH.tscn
+	[ X ] ScottsFHPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+---------------------------
+
+-------------------------------------------------------------------------------------------------------
+
+
+					      Eyebrows : 
+					     -------------
+					*Needs separate scene file
+                     
+****NEED TO SET UP COLOR CHANGING CAPABILITY
+
+[   ] 1. IN PROGRESS
+---------------------------
+	[ X ] ShaunBrows.glb
+	[   ] ShaunBrows.tscn
+	[ X ] ShaunBrowsPVW.png
+	[   ] Preview/Button Setup
+	[   ] Added to SceneTree
+	[   ] Added BTN script + Signals
+	[   ] Test! 
+---------------------------------- 
+[   ] 2. IN PROGRESS
+---------------------------
+	[ X ] RogerBrows.glb
+	[   ] RogerBrows.tscn
+	[ X ] RogerBrowsPVW.png
+	[   ] Preview/Button Setup
+	[   ] Added to SceneTree
+	[   ] Added BTN script + Signals
+	[   ] Test! 
+----------------------------------  
+[   ] 3. IN PROGRESS
+---------------------------
+	[ X ] StatiaBrows.glb
+	[   ] StatiaBrows.tscn
+	[ X ] StatiaBrowsPVW.png
+	[   ] Preview/Button Setup
+	[   ] Added to SceneTree
+	[   ] Added BTN script + Signals
+	[   ] Test! 
+----------------------------------  
+[   ] 4. IN PROGRESS
+---------------------------
+	[ X ] YorkBrows.glb
+	[   ] YorkBrows.tscn
+	[ X ] YorkBrowsPVW.png
+	[   ] Preview/Button Setup
+	[   ] Added to SceneTree
+	[   ] Added BTN script + Signals
+	[   ] Test! 
+----------------------------------   
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+
+
+						Eyes : 
+						------
+                         
+[   ] 1. DONE
+------------------------
+	[ X ] NormanEyes.glb
+	[ X ] NormanEyesPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+--------------------------- 
+[   ] 1. DONE
+---------------------------
+	[ X ] AngeloEyes.glb
+	[ X ] AngeloEyesPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+----------------------------------
+
+-------------------------------------------------------------------------------------------------------
+
+
+						Mouths : 
+						------
+                         
+[   ] 1. DONE
+-----------------------
+	[ X ] NormanMouth.glb
+	[ X ] NormanMouthPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+---------------------------
+[   ] 1. IN PROGRESS
+------------------------
+	[ X ] AngeloMouth.glb
+	[ X ] AngeloMouthPVW.png
+	[ X ] Preview/Button Setup
+	[ X ] Added to SceneTree
+	[ X ] Added BTN script + Signals
+	[ X ] Test! 
+---------------------------
