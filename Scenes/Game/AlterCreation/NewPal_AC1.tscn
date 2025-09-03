@@ -1420,7 +1420,7 @@ transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0.139328
 transform = Transform3D(0.996196, 0, 0.0871558, 0, 1, 0, -0.0871558, 0, 0.996196, 0.66603, -7.52962, 0.075242)
 
 [node name="BrowsPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="2" groups=["CosmeticPosition"]]
-transform = Transform3D(0.998865, 0.0475951, 0.00174084, -0.047595, 0.996195, 0.0730126, 0.00174081, -0.0730126, 0.99733, -0.0923285, -6.74356, 0.72884)
+transform = Transform3D(0.998865, 0.0475951, 0.00174084, -0.047595, 0.996195, 0.0730126, 0.00174087, -0.0730126, 0.99733, 0.0168886, -6.64356, 0.561296)
 
 [node name="MouthPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="3" groups=["CosmeticPosition"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.862578, -7.38755, -0.0653772)

@@ -2331,7 +2331,6 @@ func _on_makeup_color_picker_color_changed(color):
 
 #Save Data Variables
 #Name
-
 @export var pal_name : LineEdit
 
 #CosmeticColors
@@ -2354,10 +2353,16 @@ func _on_save_pressed() -> void:
 		config.set_value("PalSettings", cosmetic.name, path)
 		
 		#Skin Handling
+		var currentSkinToneFile = skinTones[skinToneIndex]
+		var currentSkinTone = load(currentSkinToneFile)
+		
+		var skin_nodes = get_tree().get_nodes_in_group("Skin")
+		for node in skin_nodes:
+			if node is MeshInstance3D:
+				node.material_override = currentSkinTone
+		
 		if skinToneIndex >= 0 and skinToneIndex < skinTones.size():
-			var current_skin_tone = skinTones[skinToneIndex]
-			var skintoneIndex: int = 0 
-			config.set_value("PalSettings", "SkinTone", current_skin_tone)
+			config.set_value("PalSettings", "SkinToneIndex", skinToneIndex)
 		else : 
 			printerr("Something went wrong with...Saving Skin Data!")
 		
@@ -2399,7 +2404,12 @@ func _on_load_pressed():
 					break
 		
 		#Skin Handling 
-		var skinNodes = get_tree().get_nodes_in_group("Skin")
+		var loadedSkinIndex: int = config.get_value("PalSettings", "SkinToneIndex", "")
+		if loadedSkinIndex != -1:
+			skinToneIndex = loadedSkinIndex
+			update_skin_tone()
+		else:
+			printerr("Something went wrong with...Loading Skin Data!")
 		
 		
 		#hair_color.color = config.get_value("PalSettings", "HairColor")
