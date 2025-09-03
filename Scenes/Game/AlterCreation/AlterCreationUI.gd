@@ -2384,6 +2384,8 @@ func _on_load_pressed():
 	if result == OK:
 		var keys: PackedStringArray = config.get_section_keys("PalSettings")
 		var cosmetics: Array[Node] = get_tree().get_nodes_in_group("CosmeticPosition")
+		var loadedSkin:  String  = config.get_value("PalSettings", "SkinTone", "")
+		
 		
 		#Cosmetic Instance Handling 
 		for key in keys:
@@ -2397,14 +2399,13 @@ func _on_load_pressed():
 					break
 		
 		#Skin Handling 
-		var loadedSkin:  String  = config.get_value("PalSettings", "SkinTone", "")
 		var skinNodes = get_tree().get_nodes_in_group("Skin")
 		
 		
 		#hair_color.color = config.get_value("PalSettings", "HairColor")
 		pal_name.text = config.get_value("PalSettings", "PalName")
 		
-		printerr("Error while loading save file! May be corrupted or missing!")
+		printerr("Something went wrong with...Loading Hair color!")
 
 
 
