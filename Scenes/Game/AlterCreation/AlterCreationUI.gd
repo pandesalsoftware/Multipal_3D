@@ -8,8 +8,30 @@ func _on_main_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Game/MainMenu/MainMenu.tscn")
 
 func _on_reset_pressed():
-	#Resets the scene to it's original state.
-	get_tree().reload_current_scene()
+	var EyePos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
+	var BrowsPos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/BrowsPos"
+	var MouthPos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/MouthPos"
+	var FacialHairPos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/FacialHairPos"
+	var FacePos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/FacePos"
+	var MakeupPos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/MakeupPos"
+	#var WingsPos = 
+	
+	#Removes cosmetics applied to the Pal
+	for child in HairPos1.get_children():
+		child.queue_free()
+	for child in EyePos.get_children():
+		child.queue_free()
+	for child in BrowsPos.get_children():
+		child.queue_free()
+	for child in MouthPos.get_children():
+		child.queue_free()
+	for child in FacialHairPos.get_children():
+		child.queue_free()
+	for child in FacePos.get_children():
+		child.queue_free()
+	for child in MakeupPos.get_children():
+		child.queue_free()
+
 
 func _on_pal_menu_pressed():
 	#Takes Player(s) to Pal Menu (Previous Scene)
@@ -152,12 +174,12 @@ func _on_york_hair_btn_pressed():
 func zachhair_inst():
 	var ZachHairScene = preload("res://Meshes/Angels/Hair/HairInstScenes/ZachHair.tscn")
 	var ZHinst = ZachHairScene.instantiate()
-	var ZachHPos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
+	var HairPos1 = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/HairPos1"
 	#Remove Existing Children 
-	for child in ZachHPos.get_children():
+	for child in HairPos1.get_children():
 		child.queue_free()
 	#Add Child 
-	ZachHPos.add_child(ZHinst)
+	HairPos1.add_child(ZHinst)
 	if is_instance_valid(ZHinst):
 		pass
 #----------------------------------------------------------------------------------------------------------------------------
