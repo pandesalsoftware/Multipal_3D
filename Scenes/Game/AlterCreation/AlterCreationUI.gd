@@ -2406,6 +2406,9 @@ func _on_save_pressed() -> void:
 
 #Loading Function
 func _on_load_pressed():
+	
+	_on_reset_pressed()
+	
 	var config = ConfigFile.new()
 	var result = config.load("user://PalSettings.cfg")
 	

@@ -1367,7 +1367,7 @@ _data = {
 metadata/_edit_lock_ = true
 
 [node name="Base_Angel" parent="." instance=ExtResource("4_g8r0f")]
-transform = Transform3D(0.858099, 0, 0.513481, 0, 1, 0, -0.513481, 0, 0.858099, -3.41491, 11.1042, -13.6212)
+transform = Transform3D(0.992494, 0, -0.122284, 0, 1, 0, 0.122284, 0, 0.992494, -3.41491, 11.1946, -16.6241)
 
 [node name="Skeleton3D" parent="Base_Angel/Armature" index="1"]
 bones/0/position = Vector3(1.33945, -1.2726, -5.32674e-09)
@@ -1417,19 +1417,19 @@ transform = Transform3D(0.999261, 0, 0.0384445, 0, 1, 0, -0.0384445, 0, 0.999261
 transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0.139328, -7.26312, -0.144793)
 
 [node name="EyePos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="1" groups=["CosmeticPosition"]]
-transform = Transform3D(0.996196, 0, 0.0871558, 0, 1, 0, -0.0871558, 0, 0.996196, 0.66603, -7.52962, 0.075242)
+transform = Transform3D(0.999836, 0, -0.0182903, 0, 1, 0, 0.0182903, 0, 0.999836, 0.257562, -7.42337, -0.170933)
 
 [node name="BrowsPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="2" groups=["CosmeticPosition"]]
-transform = Transform3D(0.998865, 0.0475951, 0.00174084, -0.047595, 0.996195, 0.0730126, 0.00174087, -0.0730126, 0.99733, 0.0168886, -6.64356, 0.561296)
+transform = Transform3D(0.950951, 0.308989, 0.015481, -0.309037, 0.951052, 0.000721026, -0.0145007, -0.00547038, 0.999888, -2.71074, -5.44356, -0.0931644)
 
 [node name="MouthPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="3" groups=["CosmeticPosition"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.862578, -7.38755, -0.0653772)
+transform = Transform3D(1, 0, 3.72529e-08, 0, 1, 0, -3.72529e-08, 0, 1, 0.219835, -7.38755, -0.138285)
 
 [node name="FacialHairPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="4" groups=["CosmeticPosition"]]
-transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0.431306, -6.89337, -0.0571432)
+transform = Transform3D(0.999661, 0, -0.0260723, 0, 1, 0, 0.0260723, 0, 0.999661, 0.0997047, -6.89337, -0.138405)
 
 [node name="FacePos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="5" groups=["CosmeticPosition"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.423796, -7.39337, -0.0615854)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.478399, -7.39337, -0.14536)
 
 [node name="MakeupPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="6" groups=["CosmeticPosition"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.423796, -7.39337, -0.0615854)
@@ -1456,7 +1456,7 @@ size = Vector2i(1920, 1080)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
-transform = Transform3D(-0.536938, -0.271925, 0.798595, -0.020131, 0.950488, 0.31011, -0.843382, 0.150433, -0.515827, 12.6981, 22.7683, -24.0203)
+transform = Transform3D(0.0824468, -0.307538, 0.947957, -0.020131, 0.950488, 0.31011, -0.996392, -0.0446509, 0.0721736, 14.9357, 22.7683, -15.0796)
 fov = 59.1
 near = 10.0
 
@@ -1482,7 +1482,7 @@ sky_mode = 1
 transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -7.67345, 1, 0.412243)
 
 [node name="cloyd" type="Node3D" parent="AlterCreationProps"]
-transform = Transform3D(0.922621, -0.0849701, -0.376228, 0.0966533, 0.995243, 0.0122496, 0.373397, -0.0476655, 0.926444, 8.61663, 9.0702, -22.4512)
+transform = Transform3D(0.487108, -0.0365659, -0.872574, 0.0966533, 0.995243, 0.0122496, 0.867975, -0.0903042, 0.488324, 10.1582, 9.0702, -28.2043)
 
 [node name="Halo" type="MeshInstance3D" parent="AlterCreationProps/cloyd"]
 transform = Transform3D(2.40339, -1.60163, -0.562574, 0.944403, 0.396426, 3.05591, -1.58848, -2.18761, 0.965658, 1.17808, 8.86366, 0.771682)
