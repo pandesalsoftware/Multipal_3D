@@ -2427,7 +2427,13 @@ func _on_load_pressed():
 				var colorKey = cosmeticNode.name + "_color"
 				if config.has_section_key("PalSettings", colorKey):
 					var colorString = config.get_value("PalSettings", colorKey)
-					var loadedColor = Color(colorString)
+					#Grabbing RGB values from Config
+					var parts = colorString.trim_prefix("(").trim_suffix(")").split(", ")
+					var r  = float(parts[0])
+					var g = float(parts[1])
+					var b = float(parts[2])
+					var a = float(parts[3])
+					var loadedColor = Color(r,g,b, a)
 					
 					if newInstance is MeshInstance3D:
 						var material = StandardMaterial3D.new()
