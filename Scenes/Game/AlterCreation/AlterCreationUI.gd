@@ -2438,7 +2438,8 @@ func _on_load_pressed():
 					if newInstance is MeshInstance3D:
 						var material = StandardMaterial3D.new()
 						material.albedo_color = loadedColor
-						newInstance.material_override = material
+						material.cull_mode = BaseMaterial3D.CULL_DISABLED
+						newInstance.set_surface_override_material(0, material)
 				
 		
 		#Skin Handling 
