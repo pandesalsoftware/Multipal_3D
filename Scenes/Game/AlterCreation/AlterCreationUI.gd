@@ -2357,9 +2357,6 @@ func _on_makeup_color_picker_color_changed(color):
 #Name
 @export var pal_name : LineEdit
 
-#CosmeticColors
-@export var hair_color : ColorPicker
-
  
 func _on_save_pressed() -> void:
 	var config = ConfigFile.new()
@@ -2372,10 +2369,18 @@ func _on_save_pressed() -> void:
 			continue
 			
 		#Getting the first child's scene path
+		var childNode = cosmetic.get_child(0)
 		var path: String = cosmetic.get_child(0).scene_file_path
 		#Saving CosmeticPos with it's Child's Scene path
-		config.set_value("PalSettings", cosmetic.name, path)
+		config.set_value("PalSettings", cosmetic.name + "_path", path)
 		
+		if childNode is MeshInstance3D:
+			var material  = childNode.get_active_material(0)
+			var albedo = material.albedo_color
+			var colorString = str(albedo)
+			#Saving CosmeticPos Children's Material Albedo as a string 
+			config.set_value("PalSettings", cosmetic.name + "_color", colorString)
+
 		#Skin Handling
 		var currentSkinToneFile = skinTones[skinToneIndex]
 		var currentSkinTone = load(currentSkinToneFile)
@@ -2390,23 +2395,16 @@ func _on_save_pressed() -> void:
 		else : 
 			printerr("Something went wrong with...Saving Skin Data!")
 		
-		
-	#Cosmetic Colors 
-	#config.set_value("PalSettings", "HairColor", hair_color.color)
-	
-	#Entered Data 
+	#Entered Data Handling
 	config.set_value("PalSettings", "PalName", pal_name.text)
-	
 	
 	#Saving Data to Config FIle
 	config.save("user://PalSettings.cfg")
-	
 	print("Pal Saved!")
 
 
 #Loading Function
 func _on_load_pressed():
-	
 	_on_reset_pressed()
 	
 	var config = ConfigFile.new()
@@ -2414,21 +2412,28 @@ func _on_load_pressed():
 	
 	#Loading Saved Data
 	if result == OK:
-		var keys: PackedStringArray = config.get_section_keys("PalSettings")
 		var cosmetics: Array[Node] = get_tree().get_nodes_in_group("CosmeticPosition")
-		var loadedSkin:  String  = config.get_value("PalSettings", "SkinTone", "")
-		
 		
 		#Cosmetic Instance Handling 
-		for key in keys:
-			for cosmetic in cosmetics:
-				if cosmetic.name == key:
-					var path: String = config.get_value("PalSettings", key, "")
-					#load the saved resource path and add it to the cosmetic 
-					var new_instance: Node3D = load(path).instantiate()
-					cosmetic.add_child(new_instance)
+		for cosmeticNode in cosmetics:
+			var pathKey = cosmeticNode.name + "_path"
+			
+			if config.has_section_key("PalSettings", pathKey):
+				var path: String = config.get_value("PalSettings", pathKey, "")
+				var newInstance: Node3D = load(path).instantiate()
+				cosmeticNode.add_child(newInstance)
+				
+				#Cosmetic Instance Color Handling 
+				var colorKey = cosmeticNode.name + "_color"
+				if config.has_section_key("PalSettings", colorKey):
+					var colorString = config.get_value("PalSettings", colorKey)
+					var loadedColor = Color(colorString)
 					
-					break
+					if newInstance is MeshInstance3D:
+						var material = StandardMaterial3D.new()
+						material.albedo_color = loadedColor
+						newInstance.material_override = material
+				
 		
 		#Skin Handling 
 		var loadedSkinIndex: int = config.get_value("PalSettings", "SkinToneIndex", "")
@@ -2437,12 +2442,9 @@ func _on_load_pressed():
 			update_skin_tone()
 		else:
 			printerr("Something went wrong with...Loading Skin Data!")
-		
-		
-		#hair_color.color = config.get_value("PalSettings", "HairColor")
+			
+		#Entered Data Handling
 		pal_name.text = config.get_value("PalSettings", "PalName")
-		
-		printerr("Something went wrong with...Loading Hair color!")
 
 
 

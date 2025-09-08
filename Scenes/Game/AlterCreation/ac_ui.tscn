@@ -273,7 +273,7 @@ corner_radius_bottom_left = 100
 shadow_color = Color(1, 1, 1, 0.6)
 shadow_size = 10
 
-[node name="AC_UI" type="Control" node_paths=PackedStringArray("pal_name", "hair_color")]
+[node name="AC_UI" type="Control" node_paths=PackedStringArray("pal_name")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -282,7 +282,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b8uxh")
 pal_name = NodePath("LineEdit")
-hair_color = NodePath("TabContainer/Hair/ColorPicker")
 metadata/_edit_use_anchors_ = true
 
 [node name="SceneNavigation" type="Control" parent="."]
@@ -2617,8 +2616,8 @@ metadata/_edit_use_anchors_ = true
 [connection signal="pressed" from="SceneNavigation/Reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="SceneNavigation/Pal Menu" to="." method="_on_pal_menu_pressed"]
 [connection signal="pressed" from="SceneNavigation/Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_yes_pressed"]
 [connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_yes_pressed"]
 [connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/No" to="." method="_on_no_pressed"]
 [connection signal="pressed" from="SkinTone" to="." method="_on_skin_tone_pressed"]
 [connection signal="color_changed" from="TabContainer/Hair/ColorPicker" to="." method="_on_color_picker_color_changed"]
