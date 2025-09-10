@@ -1367,7 +1367,7 @@ _data = {
 metadata/_edit_lock_ = true
 
 [node name="Base_Angel" parent="." instance=ExtResource("4_g8r0f")]
-transform = Transform3D(0.992494, 0, -0.122284, 0, 1, 0, 0.122284, 0, 0.992494, -3.41491, 11.1946, -16.6241)
+transform = Transform3D(0.992494, 0, -0.122284, 0, 1, 0, 0.122284, 0, 0.992494, -3.41491, 11.1946, -17.0377)
 
 [node name="Skeleton3D" parent="Base_Angel/Armature" index="1"]
 bones/0/position = Vector3(1.33945, -1.2726, -5.32674e-09)
