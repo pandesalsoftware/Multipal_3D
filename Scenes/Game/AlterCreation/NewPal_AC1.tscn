@@ -1432,7 +1432,7 @@ transform = Transform3D(0.999661, 0, -0.0260723, 0, 1, 0, 0.0260723, 0, 0.999661
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.478399, -7.39337, -0.14536)
 
 [node name="MakeupPos" type="Node3D" parent="Base_Angel/Armature/Skeleton3D/NeckBone" index="6" groups=["CosmeticPosition"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.423796, -7.39337, -0.0615854)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.233817, -7.39337, -0.0616989)
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="Base_Angel/Armature/Skeleton3D" index="9"]
 transform = Transform3D(0.207084, 0.802641, 0.55936, -0.313624, -0.487114, 0.815083, 0.926691, -0.344219, 0.150854, 2.15522, -0.612111, -5.08479)
@@ -1505,7 +1505,7 @@ mesh = SubResource("ArrayMesh_0h4kl")
 skeleton = NodePath("")
 
 [node name="Armature" type="Node3D" parent="AlterCreationProps/cloyd"]
-transform = Transform3D(1.03177, 0.360637, 0.0876981, 0.0925388, 0.0112803, -0.996273, -0.176866, 2.10972, -0.00966426, 1.12403, 8.99264, 1.43702)
+transform = Transform3D(1.03177, 0.360637, 0.0876981, 0.0925388, 0.0112803, -0.996273, -0.176866, 2.10972, -0.00966427, 1.11455, 8.89502, 1.43582)
 
 [node name="Body" type="Node3D" parent="AlterCreationProps/cloyd/Armature"]
 
@@ -1527,7 +1527,7 @@ bones/1/parent = -1
 bones/1/rest = Transform3D(-0.15012, 0.291544, 0.944705, 0.268562, -0.907578, 0.322762, 0.951493, 0.302165, 0.0579476, -5.96046e-08, 6.14673e-08, 8.43778e-07)
 bones/1/enabled = true
 bones/1/position = Vector3(0.0106786, 0.000104002, -0.145063)
-bones/1/rotation = Quaternion(0.651827, 0.214822, 0.727263, -0.00789992)
+bones/1/rotation = Quaternion(0.651827, 0.214822, 0.727263, -0.00789991)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "Right.Sg"
 bones/2/parent = 1

@@ -1298,7 +1298,7 @@ func _on_brows_color_picker_color_changed(color):
 
 #INST FUNCTIONS
 func yorkEyesinst():
-	var yorkEyesScene = preload("res://Meshes/Angels/Eyes/YorkEyes.glb")
+	var yorkEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/york_eyes.tscn")
 	var YEinst = yorkEyesScene.instantiate()
 	var YorkEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1322,7 +1322,7 @@ func _on_york_eyes_btn_pressed():
 
 #INST FUNCTIONS
 func zachEyesinst():
-	var zachEyesScene = preload("res://Meshes/Angels/Eyes/ZachEyes.glb")
+	var zachEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/zach_eyes.tscn")
 	var zachEinst = zachEyesScene.instantiate()
 	var zachEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1347,7 +1347,7 @@ func _on_zach_eyes_btn_pressed():
 #MARS--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func marsEyes_inst():
-	var marsEyesScene = preload("res://Meshes/Angels/Eyes/MarsEyes.glb")
+	var marsEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/mars_eyes.tscn")
 	var marsEinst = marsEyesScene.instantiate()
 	var marsEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1370,7 +1370,7 @@ func _on_mars_eyes_btn_pressed():
 #ROGER---------EYES--------BEGIN-------------------------------------------------------------------------------------------
 
 func rogerEyes_inst():
-	var rogerEyesScene = preload("res://Meshes/Angels/Eyes/RogerEyes.glb")
+	var rogerEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/roger_eyes.tscn")
 	var rogerEinst = rogerEyesScene.instantiate()
 	var RogerEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1393,7 +1393,7 @@ func _on_roger_eyes_btn_pressed():
 #DONNY--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func donnyEyes_inst():
-	var donnyEyesScene = preload("res://Meshes/Angels/Eyes/DonnyEyes.glb")
+	var donnyEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/donny_eyes.tscn")
 	var donnyEinst = donnyEyesScene.instantiate()
 	var DonnyEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1416,7 +1416,7 @@ func _on_donny_eyes_btn_pressed():
 #STATIA--------EYES---------BEGIN------------------------------------------------------------------------------------------
 
 func statiaEyes_inst():
-	var statiaEyesScene = preload("res://Meshes/Angels/Eyes/StatiaEyes.glb")
+	var statiaEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/statia_eyes.tscn")
 	var statiaEinst = statiaEyesScene.instantiate()
 	var statiaEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1439,7 +1439,7 @@ func _on_statia_eyes_btn_pressed():
 #MANDA---------EYES--------BEGIN------------------------------------------------------------------------------------------
 
 func mandaEyes_inst():
-	var mandaEyesScene = preload("res://Meshes/Angels/Eyes/MandaEyes.glb")
+	var mandaEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/manda_eyes.tscn")
 	var mandaEinst = mandaEyesScene.instantiate()
 	var mandaEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1462,7 +1462,7 @@ func _on_manda_eyes_btn_pressed():
 #DAVID--------EYES---------BEGIN------------------------------------------------------------------------------------------
 
 func davidEyes_inst():
-	var davidEyesScene = preload("res://Meshes/Angels/Eyes/DavidEyes.glb")
+	var davidEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/david_eyes.tscn")
 	var davidEinst = davidEyesScene.instantiate()
 	var davidEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1486,7 +1486,7 @@ func _on_david_eyes_btn_pressed():
 #NORMAN--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func normanEyes_inst():
-	var normanEyesScene = preload("res://Meshes/Angels/Eyes/NormanEyes.glb")
+	var normanEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/norman_eyes.tscn")
 	var normanEinst = normanEyesScene.instantiate()
 	var normanEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1508,7 +1508,7 @@ func _on_norman_eyes_btn_pressed():
 #ANGELO--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func angeloEyes_inst():
-	var angeloEyesScene = preload("res://Meshes/Angels/Eyes/AngeloEyes.glb")
+	var angeloEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/angelo_eyes.tscn")
 	var angeloEinst = angeloEyesScene.instantiate()
 	var angeloEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1531,7 +1531,7 @@ func _on_angelo_eyes_btn_pressed():
 #ETHAN--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func ethanEyes_inst():
-	var ethanEyesScene = preload("res://Meshes/Angels/Eyes/EthanEyes.glb")
+	var ethanEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/ethan_eyes.tscn")
 	var ethanEinst = ethanEyesScene.instantiate()
 	var ethanEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1554,7 +1554,7 @@ func _on_ethan_eyes_btn_pressed():
 #JAMIE--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func jamieEyes_inst():
-	var jamieEyesScene = preload("res://Meshes/Angels/Eyes/JamieEyes.glb")
+	var jamieEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/jamie_eyes.tscn")
 	var jamieEinst = jamieEyesScene.instantiate()
 	var jamieEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1577,7 +1577,7 @@ func _on_jamie_eyes_btn_pressed():
 #AGNA--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func agnaEyes_inst():
-	var agnaEyesScene = preload("res://Meshes/Angels/Eyes/AgnaEyes.glb")
+	var agnaEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/agna_eyes.tscn")
 	var agnaEinst = agnaEyesScene.instantiate()
 	var agnaEpos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1623,7 +1623,7 @@ func _on_stevie_eyes_btn_pressed():
 #AGENT--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func agentEyes_inst():
-	var agentEyesScene = preload("res://Meshes/Angels/Eyes/AgentEyes.glb")
+	var agentEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/agent_casey_eyes.tscn")
 	var agentEinst = agentEyesScene.instantiate()
 	var Epos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1646,7 +1646,7 @@ func _on_agent_eyes_btn_pressed():
 #LAURA--------EYES---------BEGIN-------------------------------------------------------------------------------------------
 
 func lauraEyes_inst():
-	var lauraEyesScene = preload("res://Meshes/Angels/Eyes/LauraEyes.glb")
+	var lauraEyesScene = preload("res://Meshes/Angels/Eyes/EyesSceneInst/laura_eyes.tscn")
 	var lauraEinst = lauraEyesScene.instantiate()
 	var Epos = $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
 	#Remove Existing Children 
@@ -1665,8 +1665,6 @@ func _on_laura_eyes_btn_pressed():
 	AP.play("Posing001")
 
 #-------------------------------------------------------------------------------------------LAURA------------------END
-
-
 # QF EYES HERE......................................................................................................................................
 
 func _on_remove_eyes_pressed():
@@ -1675,6 +1673,27 @@ func _on_remove_eyes_pressed():
 	for child in EyePos.get_children():
 		child.queue_free()
 
+#}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
+#-----------------------------------------
+#EYES COLOR CHANGE HERE.................................................................................................................
+@onready var EyePos= $"../../../../Base_Angel/Armature/Skeleton3D/NeckBone/EyePos"
+var ES_mat3D = StandardMaterial3D.new()
+
+func _on_eyes_color_picker_color_changed(color):
+	print("Eyes Color Picker changed!")
+	#Check if EyePos has any children to avoid out-of-bounds errors
+	if EyePos.get_child_count() > 0:
+		print("Eyes instance ready to change!")
+		var EyePosChild = EyePos.get_child(0)
+		if EyePosChild is MeshInstance3D:
+			print("MeshInstance3D Detected.")
+			#Ensure mat3D is a new instance of StandardMaterial3D 
+			ES_mat3D.albedo_color = (color)
+			EyePosChild.set_surface_override_material(0,ES_mat3D)
+			ES_mat3D.cull_mode = BaseMaterial3D.CULL_DISABLED
+			print("Eyes color changed!")
+		else : 
+			print("Nothing to change!")
 #}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{
 
 # MOVE EYES HERE......................................................................................................................................

@@ -1733,7 +1733,7 @@ skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_eti1l")
+&"": SubResource("AnimationLibrary_eti1l")
 }
 
 [node name="Node3D" type="Node3D" parent="."]

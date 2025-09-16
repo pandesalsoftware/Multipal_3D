@@ -6,7 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://brnmt8rkeu778" path="res://UI/DefaultButtonNORMAL.tres" id="4_0xyky"]
 [ext_resource type="Theme" uid="uid://b52xvdt5ktrj" path="res://UI/Buttons/instancingBTNs.tres" id="4_5csx1"]
 [ext_resource type="FontFile" uid="uid://dxuh3kxw43qla" path="res://Fonts/Balsamiq_Sans/BalsamiqSans-BoldItalic.ttf" id="5_3uo0o"]
-[ext_resource type="FontFile" uid="uid://bkaa0uquobx2q" path="res://Fonts/Madimi_One/MadimiOne-Regular.ttf" id="6_f1fal"]
+[ext_resource type="FontFile" uid="uid://duep13ox1vm5t" path="res://Fonts/double-bubble-shadow.regular.otf" id="6_f1fal"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dbepf"]
 bg_color = Color(0.784314, 0.317647, 0.313726, 1)
@@ -252,11 +252,12 @@ TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_ggkio")
 [sub_resource type="LabelSettings" id="LabelSettings_12wlj"]
 font = ExtResource("6_f1fal")
 font_size = 24
-font_color = Color(0.974848, 0.969617, 0.653345, 1)
-outline_size = 10
-outline_color = Color(0.321569, 0.321569, 0.321569, 0.682353)
-shadow_size = 6
-shadow_color = Color(0, 0, 0, 0.137255)
+font_color = Color(0.988933, 0.881748, 0.609041, 1)
+outline_size = 6
+outline_color = Color(0.392157, 0.545098, 0.666667, 1)
+shadow_size = 4
+shadow_color = Color(0.278431, 0.278431, 0.278431, 0.352941)
+shadow_offset = Vector2(1, 2.58)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1fal"]
 bg_color = Color(0.987543, 0.931632, 0.477991, 0.690196)
@@ -454,10 +455,10 @@ grow_vertical = 2
 [node name="SkinTone" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.625
-anchor_top = 0.146939
-anchor_right = 0.691666
-anchor_bottom = 0.201837
+anchor_left = 0.595833
+anchor_top = 0.723469
+anchor_right = 0.662499
+anchor_bottom = 0.778368
 offset_bottom = -16.8001
 scale = Vector2(1, 1.28)
 theme = ExtResource("2_4fllo")
@@ -469,20 +470,21 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0171875
 anchor_top = 0.0244898
-anchor_right = 0.245386
-anchor_bottom = 0.790393
-offset_right = 1.85889
-offset_bottom = -50.5854
+anchor_right = 0.245638
+anchor_bottom = 0.873097
+offset_right = 1.37457
+offset_bottom = -131.635
 scale = Vector2(0.996876, 1.18805)
 mouse_default_cursor_shape = 2
 theme = ExtResource("2_4fllo")
-theme_override_font_sizes/font_size = 30
-current_tab = 0
+current_tab = 4
 all_tabs_in_front = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Hair" type="TabBar" parent="TabContainer"]
+visible = false
 layout_mode = 2
+theme = ExtResource("2_4fllo")
 metadata/_tab_index = 0
 
 [node name="ColorPicker" type="ColorPicker" parent="TabContainer/Hair" groups=["ColorPickers"]]
@@ -504,10 +506,10 @@ metadata/_edit_use_anchors_ = true
 [node name="RemoveHair" type="Button" parent="TabContainer/Hair"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 1.35188
-anchor_top = 0.0150423
-anchor_right = 1.67188
-anchor_bottom = 0.0873315
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898624
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -990,7 +992,7 @@ metadata/_edit_use_anchors_ = true
 [node name="PIHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
-text = "Messy P.I."
+text = "Messy PI"
 label_settings = SubResource("LabelSettings_12wlj")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1017,28 +1019,27 @@ metadata/_tab_index = 1
 [node name="FacialHairColorPicker" type="ColorPicker" parent="TabContainer/Beards" groups=["ColorPickers"]]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.250453
-anchor_top = -2.19477
-anchor_right = 0.725235
-anchor_bottom = -0.207843
-offset_top = -0.0010376
-offset_bottom = -0.00100899
+anchor_left = 1.13119
+anchor_top = 0.123697
+anchor_right = 1.87619
+anchor_bottom = 0.684254
 theme = ExtResource("2_4fllo")
 edit_alpha = false
 picker_shape = 1
+sampler_visible = false
 color_modes_visible = false
 sliders_visible = false
 hex_visible = false
-presets_visible = false
 metadata/_edit_use_anchors_ = true
 
 [node name="RemoveFacialHair" type="Button" parent="TabContainer/Beards"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450947
-anchor_top = -0.86951
-anchor_right = 0.25938
-anchor_bottom = -0.601536
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
+offset_bottom = -6.10352e-05
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -1046,10 +1047,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Beards"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.751634
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Beards/ScrollContainer"]
@@ -1166,28 +1167,26 @@ metadata/_tab_index = 2
 [node name="FaceColorPicker" type="ColorPicker" parent="TabContainer/Face"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.251094
-anchor_top = -2.19474
-anchor_right = 0.725876
-anchor_bottom = -0.207807
-offset_right = -3.05176e-05
+anchor_left = 1.13119
+anchor_top = 0.123697
+anchor_right = 1.87619
+anchor_bottom = 0.667587
 theme = ExtResource("2_4fllo")
 edit_alpha = false
 picker_shape = 1
+sampler_visible = false
 color_modes_visible = false
 sliders_visible = false
 hex_visible = false
-presets_visible = false
 metadata/_edit_use_anchors_ = true
 
 [node name="RemoveFace" type="Button" parent="TabContainer/Face"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450952
-anchor_top = -0.869513
-anchor_right = 0.262703
-anchor_bottom = -0.608075
-offset_right = -2.0
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -1195,10 +1194,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Face"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.803922
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Face/ScrollContainer"]
@@ -1361,25 +1360,27 @@ metadata/_tab_index = 3
 
 [node name="BrowsColorPicker" type="ColorPicker" parent="TabContainer/Brows" groups=["ColorPickers"]]
 layout_mode = 2
-anchor_left = 0.250495
-anchor_top = -2.19478
-anchor_right = 0.725278
-anchor_bottom = -0.20785
+anchor_left = 1.13119
+anchor_top = 0.123863
+anchor_right = 1.87619
+anchor_bottom = 0.667754
 theme = ExtResource("2_4fllo")
+edit_alpha = false
 picker_shape = 1
+sampler_visible = false
 color_modes_visible = false
 sliders_visible = false
 hex_visible = false
-presets_visible = false
 metadata/_edit_use_anchors_ = true
 
 [node name="RemoveBrows" type="Button" parent="TabContainer/Brows"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450947
-anchor_top = -0.86951
-anchor_right = 0.25938
-anchor_bottom = -0.608072
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
+offset_bottom = -6.10352e-05
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -1387,10 +1388,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Brows"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.803922
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Brows/ScrollContainer"]
@@ -1601,18 +1602,33 @@ theme = ExtResource("4_5csx1")
 metadata/_edit_use_anchors_ = true
 
 [node name="Eyes" type="TabBar" parent="TabContainer"]
-visible = false
 layout_mode = 2
-metadata/_edit_lock_ = true
 metadata/_tab_index = 4
+
+[node name="ColorPicker" type="ColorPicker" parent="TabContainer/Eyes" groups=["ColorPickers"]]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.12869
+anchor_top = 0.123697
+anchor_right = 1.87369
+anchor_bottom = 0.667587
+theme = ExtResource("2_4fllo")
+edit_alpha = false
+picker_shape = 1
+sampler_visible = false
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+metadata/_edit_use_anchors_ = true
 
 [node name="RemoveEyes" type="Button" parent="TabContainer/Eyes"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450947
-anchor_top = -0.86951
-anchor_right = 0.25938
-anchor_bottom = -0.608072
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
+offset_bottom = -6.10352e-05
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -1620,10 +1636,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Eyes"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.803922
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Eyes/ScrollContainer"]
@@ -1973,10 +1989,11 @@ metadata/_tab_index = 5
 [node name="RemoveMouths" type="Button" parent="TabContainer/Mouth"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450947
-anchor_top = -0.86951
-anchor_right = 0.25938
-anchor_bottom = -0.608072
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
+offset_bottom = -6.10352e-05
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -1984,10 +2001,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Mouth"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.803922
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Mouth/ScrollContainer"]
@@ -2253,10 +2270,11 @@ metadata/_tab_index = 6
 [node name="Remove_R_Hand" type="Button" parent="TabContainer/Right Hand"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450947
-anchor_top = -0.86951
-anchor_right = 0.25938
-anchor_bottom = -0.608072
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
+offset_bottom = -6.10352e-05
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -2264,10 +2282,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Right Hand"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.803922
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Right Hand/ScrollContainer"]
@@ -2512,26 +2530,28 @@ metadata/_tab_index = 7
 [node name="MakeupColorPicker" type="ColorPicker" parent="TabContainer/Makeup" groups=["ColorPickers"]]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.247508
-anchor_top = -2.19607
-anchor_right = 0.724253
-anchor_bottom = -0.189542
+anchor_left = 1.13119
+anchor_top = 0.123697
+anchor_right = 1.87619
+anchor_bottom = 0.667587
+offset_left = 3.05176e-05
 theme = ExtResource("2_4fllo")
 edit_alpha = false
 picker_shape = 1
+sampler_visible = false
 color_modes_visible = false
 sliders_visible = false
 hex_visible = false
-presets_visible = false
 metadata/_edit_use_anchors_ = true
 
 [node name="Remove_Makeup" type="Button" parent="TabContainer/Makeup"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0450947
-anchor_top = -0.86951
-anchor_right = 0.25938
-anchor_bottom = -0.608072
+anchor_left = 1.51238
+anchor_top = 0.826335
+anchor_right = 1.83238
+anchor_bottom = 0.898623
+offset_bottom = -6.10352e-05
 theme = ExtResource("2_4fllo")
 text = "Remove"
 metadata/_edit_use_anchors_ = true
@@ -2539,10 +2559,10 @@ metadata/_edit_use_anchors_ = true
 [node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Makeup"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.013289
-anchor_top = 0.163399
-anchor_right = 0.971761
-anchor_bottom = 0.803922
+anchor_left = 0.01329
+anchor_top = 0.0308227
+anchor_right = 0.971763
+anchor_bottom = 0.976028
 metadata/_edit_use_anchors_ = true
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/Makeup/ScrollContainer"]
@@ -2673,6 +2693,7 @@ metadata/_edit_use_anchors_ = true
 [connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/alex_brows_LBL/alex_brows_BTN" to="." method="_on_alex_brows_btn_pressed"]
 [connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/mia_brows_LBL/mia_brows_BTN" to="." method="_on_mia_brows_btn_pressed"]
 [connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/laura_brows_LBL/laura_brows_BTN" to="." method="_on_laura_brows_btn_pressed"]
+[connection signal="color_changed" from="TabContainer/Eyes/ColorPicker" to="." method="_on_eyes_color_picker_color_changed"]
 [connection signal="pressed" from="TabContainer/Eyes/RemoveEyes" to="." method="_on_remove_eyes_pressed"]
 [connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/StatiaEyesLBL/StatiaEyesBTN" to="." method="_on_statia_eyes_btn_pressed"]
 [connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/MarsEyesLBL/MarsEyesBTN" to="." method="_on_mars_eyes_btn_pressed"]

@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=4 uid="uid://0p6petngupcg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63u7m"]
+resource_name = "Eyes.001"
+cull_mode = 2
+albedo_color = Color(0.321259, 0.200019, 0.0579336, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_u1i6r"]
+_surfaces = [{
+"aabb": AABB(0.100103, -0.492615, -0.703146, 0.585707, 0.618068, 0.968043),
+"format": 34359742465,
+"index_count": 84,
+"index_data": PackedByteArray("CgADAAEACgALAAMACwAFAAMADAAKAAEADAABAAIADQALAAoADgAKAAwADgANAAoAAgAIAAwAAgAEAAgACAAEAAYADQAPAAsADAAIAAcADAAHAA4ACAAGABAABwAIABAAEAAGAAUADgAHAAAABwAQAAAADgAAAA0ADQARAA8ADQAAABEADwARAAkAAAAJABEAAAAQAAkAEAAFAAkADwAJAAsACwAJAAUA"),
+"lods": [0.15054, PackedByteArray("BwABAAIAAgAIAAcAAgAEAAgACAAEAAYABwAIAAYABwAAAAEABwAGAAAAAAADAAEAAAAGAAkAAAAJAAMABgAFAAkAAwAJAAUA"), 0.217644, PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAAAFAAMAAAAEAAYAAAAGAAUA")],
+"name": "Eyes.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("k8cCPwk4/L5i9I2+jskGP/DK9D38d5K+glgVPtx2AD5fATS/PJEvP9x2AD4Z54I+83b8PWWM+T3+By+/c1EoP2WM+T2noIc+pjEAPw9L6j3fCou+fnIXPsCN174yiCK/xgLNPSeMe75zzhi/9TwSPyeMe768dHU+h/zhPsC/eL7Y13O+kokZP6jXeb6YDmw+3Fv7PajXeb561B2/+PUIP4xV9r6o6pS+ouIsPkzG0b5xNie/zq0nP1DG0b7KJVc+AaTUPsYOe77Dz2S+2uUgP8SN1770xV8+")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gnw71"]
+resource_name = "EthanEyes_Cube_007"
+_surfaces = [{
+"aabb": AABB(0.100103, -0.492615, -0.703146, 0.585707, 0.618068, 0.968043),
+"attribute_data": PackedByteArray("pVLpPgAAwD4AACA/AADAPgAAID8AAAA/AAAgPwAAgD4AACA/AAAAPwAAID8AAIA+AAAgPwAAwD6mUuk+AAAAP/NhBT8AAAA/8mEFPwAAgD7yYQU//v+/PvJhBT8AAIA+82EFPwAAAD+lUuk+AADAPqZS6T4AAAA/pFLpPgAAgD7yYQU//v+/PqRS6T4AAIA+"),
+"format": 34359742487,
+"index_count": 84,
+"index_data": PackedByteArray("CgADAAEACgALAAMACwAFAAMADAAKAAEADAABAAIADQALAAoADgAKAAwADgANAAoAAgAIAAwAAgAEAAgACAAEAAYADQAPAAsADAAIAAcADAAHAA4ACAAGABAABwAIABAAEAAGAAUADgAHAAAABwAQAAAADgAAAA0ADQARAA8ADQAAABEADwARAAkAAAAJABEAAAAQAAkAEAAFAAkADwAJAAsACwAJAAUA"),
+"lods": [0.15054, PackedByteArray("BwABAAIAAgAIAAcAAgAEAAgACAAEAAYABwAIAAYABwAAAAEABwAGAAAAAAADAAEAAAAGAAkAAAAJAAMABgAFAAkAAwAJAAUA"), 0.217644, PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAAAFAAMAAAAEAAYAAAAGAAUA")],
+"material": SubResource("StandardMaterial3D_63u7m"),
+"name": "Eyes.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("k8cCPwk4/L5i9I2+jskGP/DK9D38d5K+glgVPtx2AD5fATS/PJEvP9x2AD4Z54I+83b8PWWM+T3+By+/c1EoP2WM+T2noIc+pjEAPw9L6j3fCou+fnIXPsCN174yiCK/xgLNPSeMe75zzhi/9TwSPyeMe768dHU+h/zhPsC/eL7Y13O+kokZP6jXeb6YDmw+3Fv7PajXeb561B2/+PUIP4xV9r6o6pS+ouIsPkzG0b5xNie/zq0nP1DG0b7KJVc+AaTUPsYOe77Dz2S+2uUgP8SN1770xV8+bmlGI////z/57LZFUKDy9qXnBQw8n9H8EsqsaqidovEAAwea////v51g1oL///8/ZDowk5KgHgkXOZQ0////v2QN7nT///8/kFGhd////z+n+M+yz3gh+TjOi34Qe9v3+QEJAZF4Nf3N4O49ArDU8B3nUA7QUG71HsuTadmMSOqQMgl5PnmNBvRzp0T///8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_u1i6r")
+
+[node name="EthanEyes" type="MeshInstance3D"]
+transform = Transform3D(3.17206, 0, -1.78637, 0, 3.64048, 0, 1.78637, 0, 3.17206, 0.124046, 10.8432, -0.12805)
+mesh = SubResource("ArrayMesh_gnw71")
+skeleton = NodePath("")

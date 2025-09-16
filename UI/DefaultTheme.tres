@@ -18,7 +18,7 @@ shadow_color = Color(1, 1, 1, 0.6)
 shadow_size = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16neq"]
-bg_color = Color(0.55853, 0.770377, 0.991614, 0.933333)
+bg_color = Color(0.555126, 0.665385, 0.799492, 0.933333)
 border_color = Color(1, 1, 1, 1)
 border_blend = true
 corner_radius_top_left = 100
@@ -135,11 +135,12 @@ Label/colors/font_outline_color = Color(0.976216, 0.878838, 0.91187, 1)
 Label/colors/font_shadow_color = Color(0.368627, 0.368627, 0.368627, 0.572549)
 Label/constants/outline_size = -6
 Label/constants/shadow_offset_y = 1
-Label/constants/shadow_outline_size = 11
+Label/constants/shadow_outline_size = 19
 Panel/styles/panel = SubResource("StyleBoxFlat_43if6")
 TabContainer/colors/font_selected_color = Color(0.918054, 0.820644, 1.92523e-06, 1)
 TabContainer/colors/font_unselected_color = Color(0.848716, 0.893734, 0.974081, 1)
-TabContainer/font_sizes/font_size = 9
+TabContainer/font_sizes/font_size = 15
+TabContainer/fonts/font = ExtResource("1_77c7j")
 TabContainer/styles/panel = SubResource("StyleBoxFlat_2vgsa")
 TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_w172p")
 TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_pxyi7")
